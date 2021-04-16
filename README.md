@@ -12,4 +12,5 @@
   * In directory db:
     - psql orcid_finder -U postgres -h localhost < create_eml_schemas.sql
 * Populate the table eml_files.responsible_parties_raw with the responsible parties as found in the EML files
- * 
+  - In db.py, run: 
+    - build_responsible_party_raw_db()
