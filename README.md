@@ -29,4 +29,11 @@
     - Find names that have inconsistent orcids:
       - In checks.py, run:
         - check_orcid_uniqueness_for_responsible_parties_with_orcids_supplied()
-        - 
+      - Using the results, manually construct db/make_manual_corrections_to_supplied_orcids.sql
+      - In directory db:
+        - psql -d orcid_finder -U postgres -h localhost < make_manual_corrections_to_supplied_orcids.sql
+
+
+* Harvest text from EML files
+  * In parse_eml.py, run:
+    *  harvest_eml_text()
